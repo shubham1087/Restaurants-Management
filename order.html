@@ -1,60 +1,119 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>order page</title>
-        <style>
-          *{
-            padding: 0;
-            margin: 0;
-          }
-            body {
-                background-image:url('https://th.bing.com/th/id/R.1e99824c64aa00cee6cb157986bd1e18?rik=DB6WcSNLkKMvIg&riu=http%3a%2f%2fi.imgur.com%2fJp78I.jpg&ehk=eZ31fEu3hqfZjyUdP%2fgGhhubmelZFDt7VXrA99G2UmQ%3d&risl=&pid=ImgRaw&r=0');
-                background-repeat: no-repeat;
-                
-                background-size: 100% 100%;
+<head>
+  <title>Order Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-            }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      padding: 40px;
+    }
 
-            p{
-                margin-top: 1.5%;
-                background-color:transparent;
-                width: 30%;
-            }
+    .menu-container {
+      background: rgba(255, 255, 255, 0.85);
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
 
-            h1{ 
-                margin-top:3%;
-                font-size: 2.8rem;
-            }
-        </style>
-    </head>
-    <body style="color:rgb(33, 174, 113);" > 
-       <i><u><h2>STARTERS</h2></u></i>
-        <p><h3>Tomato Soup ---100/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-            Chicken Salad ---130/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-            Bread ---20/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br></h3>
-        </p><br>
-        <i><u><h2 style="margin:0">BREAKFAST</h2></u></i>
-            <p><h3>
-            Dosa ---40/-<input type="checkbox"></br>
-            Idly With Sambar ---30/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-            Upma ---40/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-            Vada With Sambar ---30/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br></h4></p></h3><br>
-        <i><u><h2>MAIN COURSES</h2></u></i>
-        <p><h3>
-        Grilled Fish and Potatoes ---450/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Chicken Special Biryani ---300/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        White Pasta With Chicken---250/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Deluxe Burger ---350/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Parota With Curry ---200/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br></h3>
-    </p><br>
-    <i><u><h2 >DESSERTS</h2></u></i>
-    <p ><h3>
-        Fruit Salad ---100/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Milk Shakes ---90/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Ice Creams(200ml) ---120/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br>
-        Ice Creams(400ml) ---200/-&nbsp;&nbsp;&nbsp;<input type="checkbox"></br></h3>
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1c6b52;
+    }
 
-    </p>
-    <h2 style="background-color: aqua;"; width: 66px; margin-left: 60px;><a href="checkout.html">Order</a></h2>
-    
-    </body>
+    h2 {
+      margin-top: 40px;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    input[type="checkbox"] {
+      margin-left: 10px;
+    }
+
+    .order-btn {
+      display: block;
+      width: 200px;
+      margin: 40px auto 0;
+      text-align: center;
+      padding: 12px 0;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+
+    .order-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Welcome to Reva Restaurant</h1>
+
+    <div class="section">
+      <h2>STARTERS</h2>
+      <label>Tomato Soup — 100/- <input type="checkbox"></label>
+      <label>Chicken Salad — 130/- <input type="checkbox"></label>
+      <label>Bread — 20/- <input type="checkbox"></label>
+    </div>
+
+    <div class="section">
+      <h2>BREAKFAST</h2>
+      <label>Dosa — 40/- <input type="checkbox"></label>
+      <label>Idly With Sambar — 30/- <input type="checkbox"></label>
+      <label>Upma — 40/- <input type="checkbox"></label>
+      <label>Vada With Sambar — 30/- <input type="checkbox"></label>
+    </div>
+
+    <div class="section">
+      <h2>MAIN COURSES</h2>
+      <label>Grilled Fish and Potatoes — 450/- <input type="checkbox"></label>
+      <label>Chicken Special Biryani — 300/- <input type="checkbox"></label>
+      <label>White Pasta With Chicken — 250/- <input type="checkbox"></label>
+      <label>Deluxe Burger — 350/- <input type="checkbox"></label>
+      <label>Parota With Curry — 200/- <input type="checkbox"></label>
+    </div>
+
+    <div class="section">
+      <h2>DESSERTS</h2>
+      <label>Fruit Salad — 100/- <input type="checkbox"></label>
+      <label>Milk Shakes — 90/- <input type="checkbox"></label>
+      <label>Ice Creams (200ml) — 120/- <input type="checkbox"></label>
+      <label>Ice Creams (400ml) — 200/- <input type="checkbox"></label>
+    </div>
+
+    <a class="order-btn" href="checkout.html">Place Order</a>
+  </div>
+</body>
 </html>
